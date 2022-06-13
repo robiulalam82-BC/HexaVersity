@@ -1,0 +1,23 @@
+
+
+var faker = require("faker")
+
+function generate_Salary() {
+var salary = []
+
+for( var salary = 0; salary < 1000; salary++){
+var firstname = faker.name.firstname();
+var email = faker.name.email();
+var salary = faker.name.salary();
+
+
+salary.push({
+"name" : salary,
+"firstname": firstname,
+"email" : email,
+"salary" : salary
+})
+}
+return {"salary": salary } 
+}
+module.exports =generate_Salary
